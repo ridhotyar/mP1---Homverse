@@ -111,7 +111,74 @@ body {
   padding-inline: 15px;
 }
 
-button, a { transition: var(--transition);}
+button,
+a {
+  transition: var(--transition);
+}
+
+.h1, 
+.h2,
+.h3 {
+  color: var(--dark-jungle-green);
+  font-family: var(--ff-poppins);
+  line-height: 1.3;
+}
+
+.h1 {
+  font-size: var(--fs-1);
+  line-height: 1;
+}
+
+.h2 {
+  font-size: var(--fs-2);
+}
+
+.h3 {
+  font-size: var(--fs-4);
+  font-weight: var(--font-weight, 700);
+}
+
+.h3 > a {
+  color: inherit;
+}
+
+.btn {
+  position: relative;
+  background: var(--orange-soda);
+  color: var(--white);
+  font-family: var(--ff-poppins);
+  font-size: var(--fs-5);
+  text-transform: var(--text-transform, capitalize);
+  border: 1px solid var(--orange-soda);
+  padding: 10px 20px;
+  z-index: 1;
+}
+
+.btn:is(:hover, :focus) {
+  background: var(--black);
+  color: var(--dark-jungle-green);
+  border-color: var(--black);
+}
+
+.btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: var(--white);
+  transition: var(--transition);
+  z-index: -1;
+}
+
+.btn:is(:hover, :focus)::before {
+  width: 100%;
+}
+
+.w-100{
+  width: 100%;
+}
 
 
 /*-----------------------------------*\
@@ -137,9 +204,13 @@ button, a { transition: var(--transition);}
   align-items: center;
 }
 
-.header-top .container { gap: 8px 20px; }
+.header-top .container {
+  gap: 8px 20px;
+}
 
-.header-top-list { gap: 15px; }
+.header-top-list {
+  gap: 15px;
+}
 
 .header-top-link {
   color: var(--white);
@@ -148,7 +219,9 @@ button, a { transition: var(--transition);}
   gap: 5px;
 }
 
-.header-top-link:is(:hover, :focus) { color: var(--orange-soda);}
+.header-top-link:is(:hover, :focus) {
+  color: var(--orange-soda);
+}
 
 .header-top-link ion-icon {
   color:  var(--orange-soda);
@@ -162,9 +235,13 @@ button, a { transition: var(--transition);}
   align-items: center;
 }
 
-.header-top .wrapper { gap: 20px; }
+.header-top .wrapper {
+  gap: 20px;
+}
 
-.header-top-social-list { gap: 8px;}
+.header-top-social-list {
+  gap: 8px;
+}
 
 .header-top-social-link {
   color: var(--white);
@@ -179,14 +256,18 @@ button, a { transition: var(--transition);}
   padding: 4px 15px;
 }
 
-.header-top-btn:is(:hover, :focus) { --orange-soda: hsl(7, 72%, 46%); }
+.header-top-btn:is(:hover, :focus) {
+  --orange-soda: hsl(7, 72%, 46%);
+}
 
 .header-bottom {
   background: var(--white);
   padding-block: 25px;
 }
 
-.header-bottom .logo img { margin-inline: auto; }
+.header-bottom .logo img {
+  margin-inline: auto;
+}
 
 .navbar {
   background: var(--white);
@@ -218,7 +299,9 @@ button, a { transition: var(--transition);}
   margin-bottom: 25px;
 }
 
-.navbar-top .logo img { width: 200px; }
+.navbar-top .logo img {
+  width: 200px;
+}
 
 .nav-close-btn ion-icon {
   font-size: 20px;
@@ -234,7 +317,9 @@ button, a { transition: var(--transition);}
   padding-block: 15px;
 }
 
-.navbar-link:is(:hover, :focus) { color: var(--orange-soda); }
+.navbar-link:is(:hover, :focus) {
+  color: var(--orange-soda);
+}
 
 .overlay {
   position: fixed;
@@ -273,12 +358,58 @@ button, a { transition: var(--transition);}
   transition: var(--transition);
 }
 
-.header-bottom-actions-btn:is(:hover, :focus) ion-icon { color: var(--orange-soda); }
+.header-bottom-actions-btn:is(:hover, :focus) ion-icon {
+  color: var(--orange-soda);
+}
 
 .header-bottom-actions-btn span {
   color: var(--cadet);
   font-family: var(--ff-poppins);
   font-size: var(--fs-7);
   font-weight: var(--fw-500);
-
 }
+
+/*-----------------------------------*\
+  #Hero
+\*-----------------------------------*/
+
+.hero {
+  background: var(--cultured-2);
+  padding-block: var(--section-padding);
+}
+
+.hero-content {
+  margin-bottom: 60px;
+}
+
+.hero-subtitle {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 5px;
+  margin-bottom: 20px;
+}
+
+.hero-subtitle ion-icon {
+  color: var(--orange-soda);
+}
+
+.hero-subtitle span {
+  color: var(--dark-jungle-green);
+  font-size: var(--fs-5);
+  font-weight: var(--fw-700);
+}
+
+.hero-title {
+  margin-bottom: 20px;
+}
+
+.hero-text {
+  color: var(--cadet);
+  font-size: var(--fs-5);
+  line-height: 1.8;
+  padding-left: 15px;
+  border-left: 1px solid;
+  margin-bottom: 30px;
+}
+
