@@ -2334,9 +2334,8 @@ button, a {
     min-width: calc(50% - 12.5px); 
   }
 
-  /* Service */
   .service-list > li {
-    width: calc(50%-15px);
+    width: calc(50% - 15px);
   }
 }
 
@@ -2434,6 +2433,25 @@ button, a {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
+
+  /* Features */
+  .features-list > li {
+    width: calc(33.33% - 13.33px);
+  }
+
+  .features-card {
+    gap: 20px;
+  }
+
+  .features-card .card-icon {
+    width: 80px;
+    height: 80px;
+    font-size: 32px;
+  }
+
+  .features-card .card-title {
+    --fs-6:1.125rem;
+  }
 }
 
 /* Perubahan tampilan diatas layar dengan lebar 992px */
@@ -2492,7 +2510,12 @@ button, a {
 
   /* Service */
   .service-list > li {
-    width: calc(33.33%-20px);
+    width: calc(33.33% - 20px);
+  }
+
+  /* Features */
+  .features-list {
+    column-gap: 30px;
   }
 }
 
@@ -2573,4 +2596,14 @@ button, a {
     margin-bottom: 40px;
   }
 
+  /* Features */
+  .features-card .card-icon {
+    width: 100px;
+    height: 100px;
+    font-size: 45px;
+  }
+  
+  .features-card .card-title {
+    --fs-6: 1.375rem
+  }
 }
