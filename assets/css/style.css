@@ -2460,6 +2460,19 @@ button, a {
   .features-card .card-title {
     --fs-6:1.125rem;
   }
+
+  /* Blog */
+  .blog-card {
+    --fs-7: 0.875rem;
+  }
+
+  .blog-title {
+    font-size: 1.25rem;
+  }
+
+  .blog .card-meta-list {
+    gap: 30px;
+  }
 }
 
 /* Perubahan tampilan diatas layar dengan lebar 992px */
@@ -2533,6 +2546,15 @@ button, a {
   /* Features */
   .features-list {
     column-gap: 30px;
+  }
+
+  .features-list > li {
+    width: calc(25% - 30px);
+  }
+
+  /* Blog */
+  .blog-title {
+    font-size: 1.375rem;
   }
 }
 
