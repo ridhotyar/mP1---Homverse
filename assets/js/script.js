@@ -16,9 +16,9 @@ const navLinks = document.querySelectorAll("[data-nav-link]")
 const navElemArr = [overlay, navCloseBtn, navOpenBtn]
 
 // close navbar when click on any nacbar links
-// for (let i = 0; i < navLinks.length; i++) {
-//     navElemArr.push(navLinks[i])
-// }
+for (let i = 0; i < navLinks.length; i++) {
+    navElemArr.push(navLinks[i])
+}
 
 // add event on all element
 for (let i = 0; i < navElemArr.length; i++) {
@@ -27,3 +27,12 @@ for (let i = 0; i < navElemArr.length; i++) {
         elemToggleFunc(overlay)
     })
 }
+
+// Header Active when scroll down at screen with width more than 1200px
+
+const header = document.querySelector("[data-header")
+
+window.addEventListener("scroll", function () {
+    window.scrollY >= 400 ? header.classList.add("active")
+        : header.classList.remove("active")
+})
