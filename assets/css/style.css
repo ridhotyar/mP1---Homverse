@@ -2334,8 +2334,16 @@ button, a {
     min-width: calc(50% - 12.5px); 
   }
 
+  /* Service */
   .service-list > li {
     width: calc(50% - 15px);
+  }
+
+  /* Property */
+
+  .property .container {
+    max-width: unset;
+    padding-inline: 25px;
   }
 }
 
@@ -2511,6 +2519,15 @@ button, a {
   /* Service */
   .service-list > li {
     width: calc(33.33% - 20px);
+  }
+
+  /* Property */
+  .property-card .card-content {
+    padding-inline: 30px;
+  }
+
+  .card-footer {
+    padding: 20px 30px 30px;
   }
 
   /* Features */
