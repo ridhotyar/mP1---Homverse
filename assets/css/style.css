@@ -2399,6 +2399,11 @@ button, a {
     height: 50px;
     box-shadow: var(--shadow-2);
   }
+
+  /* Hero */
+  .hero-content {
+    max-width: 400px;
+  }
 }
 
 /* Perubahan tampilan diatas layar dengan lebar 992px */
@@ -2425,6 +2430,18 @@ button, a {
   .header-top-list,
   .header-top .wrapper {
     gap: 30px;
+  }
+
+  /* Hero */
+  .hero-content {
+    max-width: unset;
+    margin-bottom: 0;
+  }
+
+  .hero .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
   }
 }
 
@@ -2496,5 +2513,12 @@ button, a {
   @keyframes slideDown {
     0% { transform: translateY(0); }
     100% { transform: translateY(100%); }
+  }
+
+  /* Hero */
+  .hero-text {
+    padding-left: 30px;
+    max-width: 450px;
+    margin-bottom: 40px;
   }
 }
