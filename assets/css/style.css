@@ -2322,6 +2322,22 @@ button, a {
     max-width: 570px;
     margin-inline: auto;
   }
+
+  .has-scrollbar {
+    gap: 25px;
+    margin-inline: -25px;
+    padding-inline: 25px;
+    scroll-padding-left: 25px;
+  }
+
+  .has-scrollbar > li { 
+    min-width: calc(50% - 12.5px); 
+  }
+
+  /* Service */
+  .service-list > li {
+    width: calc(50%-15px);
+  }
 }
 
 /* Perubahan tampilan diatas layar dengan lebar 768px */
@@ -2464,6 +2480,19 @@ button, a {
     grid-template-columns: 1fr 1fr;
     align-items: center;
     gap: 60px;
+  }
+
+  .about-banner {
+    margin-bottom: 0;
+  }
+
+  .about-banner > img {
+    width: 100%;
+  }
+
+  /* Service */
+  .service-list > li {
+    width: calc(33.33%-20px);
   }
 }
 
